@@ -32,7 +32,7 @@ class Settings(BaseSettings):
     # supported file extensions
     supported_file_extensions_str: str = Field(
         alias="SUPPORTED_FILE_EXTENSIONS",
-        default=["pdf", "txt", "doc", "docx", "xls", "xlsx", "json"],
+        default="pdf,txt,doc,docx,xls,xlsx,json",
     )
 
     @property
